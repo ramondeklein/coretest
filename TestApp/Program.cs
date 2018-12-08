@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Configuration;
 using System.ComponentModel;
-using PropertyChanged;
+using CoreLib;
 
 namespace CoreTest
 {
@@ -22,6 +22,11 @@ namespace CoreTest
             Console.WriteLine($"Person: {person.Name}");
             person.PropertyChanged += (s, e) => Console.WriteLine($"Name changed to '{person.Name}'");
             person.Name = "Frank";
+
+            var dog = new Dog { Name = "Bello" };
+            Console.WriteLine($"Dog: {dog.Name}");
+            dog.PropertyChanged += (s, e) => Console.WriteLine($"Dog's name changed to '{dog.Name}'");
+            dog.Name = "Samson";
         }
     }
 }
