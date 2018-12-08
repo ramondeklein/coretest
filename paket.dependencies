@@ -1,0 +1,7 @@
+source https://api.nuget.org/v3/index.json
+framework: auto-detect
+
+nuget Fody
+nuget PropertyChanged.Fody
+nuget System.Configuration.ConfigurationManager
+clitool Microsoft.DotNet.Xdt.Tools

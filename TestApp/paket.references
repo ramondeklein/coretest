@@ -1,0 +1,4 @@
+Fody
+PropertyChanged.Fody
+System.Configuration.ConfigurationManager
+Microsoft.DotNet.Xdt.Tools
